@@ -546,9 +546,9 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
 ══════════════════════════════════════ -->
 <section id="cover">
   <div class="container">
-    <h1>Hay €711K de EBITDA<br>esperando ser <em>desbloqueados.</em></h1>
+    <h1>Optimizar el routing de pagos puede<br>generar <em>€711K adicionales de EBITDA.</em></h1>
     <p class="lead" style="margin-top:20px">
-      No requiere nuevo tráfico. No requiere cambio de precios. El problema está en cómo enrutamos los pagos — y tiene solución concreta.
+      No requiere nuevo tráfico. No requiere cambio de precios. El problema está en cómo enrutamos los pagos.
     </p>
     <div class="cover-meta">
       <div class="cover-stat">
@@ -623,10 +623,10 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
       Oportunidades
     </div>
 
-    <h2>Dos brechas concretas. Ambas<br><span style="color:var(--red)">corregibles sin tocar el producto.</span></h2>
+    <h2>El volumen está concentrado en EU.<br><span style="color:var(--red)">El routing, no está optimizado.</span></h2>
 
     <p class="lead" style="margin-top:16px; margin-bottom:32px">
-      EU concentra el 84% del volumen y es donde el routing está más desalineado. Hay además una anomalía en American Express que ningún cambio de PSP resuelve por sí solo — y que representa el mayor upside individual del análisis.
+      EU concentra el 84% del volumen total y es donde los gaps de Collection Rate son más pronunciados. Hay además una anomalía en American Express que es transversal a todos los PSPs — y que requiere un diagnóstico propio.
     </p>
 
     <div class="impact-layout">
@@ -650,7 +650,7 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
           </div>
         </div>
         <div style="margin-top:14px;font-size:0.78rem;color:var(--muted);line-height:1.6;padding:12px 14px;background:var(--purple-light);border-radius:7px;">
-          <strong style="color:var(--purple)">PSP1 tiene 25pp más de CR que PSP3 en EU</strong> — en la región con 84% del volumen total. W816 opera en EU con PSP3. W199 opera en EU con PSP2.
+          <strong style="color:var(--purple)">PSP1 tiene 25pp más de CR que PSP3 en EU</strong> — en la región que concentra la mayor parte del volumen. La elección de PSP en EU tiene impacto directo sobre el EBITDA.
         </div>
       </div>
 
@@ -679,7 +679,7 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
           </div>
         </div>
         <div class="cost-note">
-          <strong>Amex en EU no es un problema de PSP</strong> — el CR es bajo en los tres. Cambiar de PSP mejora marginalmente (de 12% a 26%). La causa está en la combinación Amex + EU y requiere diagnóstico técnico específico. El upside potencial es <strong>+€503K</strong>.
+          <strong>Amex: 23,5% CR vs 86,2% del resto de tarjetas.</strong> En EU falla en los tres PSPs — los mismos que en US y APAC funcionan bien. El problema es la combinación Amex + EU, no el PSP.
         </div>
       </div>
     </div>
@@ -696,92 +696,18 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
       Plan de acción
     </div>
 
-    <h2>Tres iniciativas priorizadas<br>por impacto y velocidad de ejecución.</h2>
+    <h2>Ineficiencias en el routing de PSP están<br>afectando el Collection Rate en websites de alto volumen.</h2>
 
     <p class="lead" style="margin-top:16px">
-      Las dos primeras están listas para ejecutarse esta semana con impacto cuantificado y riesgo bajo. La tercera requiere un diagnóstico de dos semanas — y tiene el mayor upside del portfolio.
+      Se identifican tres oportunidades de mejora en el routing de pagos. La de mayor impacto corresponde a una anomalía en American Express que requiere diagnóstico antes de implementar cambios.
     </p>
 
     <div class="action-cards">
 
-      <!-- ACCION 1 -->
-      <div class="ac a1 open" id="ac1">
+      <!-- ACCION 1 — AMEX (mayor upside) -->
+      <div class="ac a3" id="ac1">
         <div class="ac-header" onclick="toggleAc('ac1')">
           <div class="ac-num">1</div>
-          <div class="ac-head-text">
-            <div class="ac-title">Migrar W816 de PSP3 a PSP1 en EU</div>
-            <div class="ac-subtitle">Routing subóptimo confirmado · EU · 4.615 órdenes · impacto inmediato</div>
-          </div>
-          <div class="ac-delta">+€89.934</div>
-          <div class="ac-chevron">▲</div>
-        </div>
-        <div class="ac-body">
-          <div class="ac-body-grid">
-            <div>
-              <p class="ac-desc" style="margin-bottom:14px">
-                W816 procesa el 92% de su volumen en EU usando <strong>PSP3, el PSP con peor CR en la región (47%)</strong>. Con el mismo PSP, en APAC llega a 73% — el problema no es el website, es la combinación PSP3 + EU. PSP1 tiene 74% CR en EU. Migrar es una decisión de routing, no de producto.
-              </p>
-              <div class="steps-list">
-                <div class="step-item"><div class="step-n">→</div><div>Redirigir tráfico EU de W816 de PSP3 a PSP1</div></div>
-                <div class="step-item"><div class="step-n">→</div><div>Monitorear CR durante 2 semanas post-migración</div></div>
-                <div class="step-item"><div class="step-n">→</div><div>APAC y US no se tocan — están funcionando bien</div></div>
-              </div>
-            </div>
-            <div class="ac-metrics">
-              <div class="ac-metric-row"><span class="ml">CR EU actual (PSP3)</span><span class="mv r">47%</span></div>
-              <div class="ac-metric-row"><span class="ml">CR EU proyectado (PSP1)</span><span class="mv g">74%</span></div>
-              <div class="ac-metric-row"><span class="ml">Órdenes EU afectadas</span><span class="mv">4.615</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta órdenes exitosas</span><span class="mv g">+1.248</span></div>
-              <div class="ac-metric-row"><span class="ml">Revenue por orden exitosa</span><span class="mv">€75,83</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta revenue</span><span class="mv g">+€94.599</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta costo (PSP3→PSP1)</span><span class="mv r">+€4.665</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta EBITDA neto</span><span class="mv g">+€89.934</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ACCION 2 -->
-      <div class="ac a2" id="ac2">
-        <div class="ac-header" onclick="toggleAc('ac2')">
-          <div class="ac-num">2</div>
-          <div class="ac-head-text">
-            <div class="ac-title">Migrar W199 de PSP2 a PSP1 en EU</div>
-            <div class="ac-subtitle">Misma brecha, mismo fix · EU · 3.764 órdenes · ejecutable en paralelo</div>
-          </div>
-          <div class="ac-delta">+€118.531</div>
-          <div class="ac-chevron">▼</div>
-        </div>
-        <div class="ac-body">
-          <div class="ac-body-grid">
-            <div>
-              <p class="ac-desc" style="margin-bottom:14px">
-                W199 usa PSP2 en todas las regiones. En EU (90% del volumen) tiene 43% CR. El mismo PSP2 en APAC alcanza 87% — <strong>el problema está en PSP2 + EU</strong>, no en el website. PSP1 tiene 74% CR en EU. Misma lógica que la acción anterior, ejecutable en paralelo.
-              </p>
-              <div class="steps-list">
-                <div class="step-item"><div class="step-n">→</div><div>Redirigir tráfico EU de W199 de PSP2 a PSP1</div></div>
-                <div class="step-item"><div class="step-n">→</div><div>APAC y US de W199 permanecen en PSP2 — funcionan bien</div></div>
-                <div class="step-item"><div class="step-n">→</div><div>Ejecutable en paralelo con Acción 1</div></div>
-              </div>
-            </div>
-            <div class="ac-metrics">
-              <div class="ac-metric-row"><span class="ml">CR EU actual (PSP2)</span><span class="mv r">43%</span></div>
-              <div class="ac-metric-row"><span class="ml">CR EU proyectado (PSP1)</span><span class="mv g">74%</span></div>
-              <div class="ac-metric-row"><span class="ml">Órdenes EU afectadas</span><span class="mv">3.764</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta órdenes exitosas</span><span class="mv g">+1.190</span></div>
-              <div class="ac-metric-row"><span class="ml">Revenue por orden exitosa</span><span class="mv">€103</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta revenue</span><span class="mv g">+€122.201</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta costo (PSP2→PSP1)</span><span class="mv r">+€3.670</span></div>
-              <div class="ac-metric-row"><span class="ml">Delta EBITDA neto</span><span class="mv g">+€118.531</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ACCION 3 -->
-      <div class="ac a3" id="ac3">
-        <div class="ac-header" onclick="toggleAc('ac3')">
-          <div class="ac-num">3</div>
           <div class="ac-head-text">
             <div class="ac-title">Resolver la anomalía de Amex en EU</div>
             <div class="ac-subtitle">Fallo transversal a los 3 PSPs · mayor upside del portfolio · diagnóstico como primer paso</div>
@@ -793,7 +719,7 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
           <div class="ac-body-grid">
             <div>
               <p class="ac-desc" style="margin-bottom:12px">
-                Amex tiene 23,5% CR global — vs 86,2% del resto de tarjetas. Pero el fallo no es de PSP: en EU falla en los tres. En US y APAC funciona bien con los mismos PSPs. <strong>El problema es la combinación Amex + EU</strong>.
+                Amex tiene 23,5% CR global vs 86,2% del resto de tarjetas. En EU falla en los tres PSPs — los mismos que en US y APAC superan el 76%. <strong>El problema es la combinación Amex + EU</strong>, no el PSP asignado.
               </p>
               <div class="amex-mini-grid">
                 <div class="amex-mini">
@@ -830,7 +756,78 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
               <div class="ac-metric-row"><span class="ml">Revenue potencial (86,2% CR)</span><span class="mv g">€691.641</span></div>
               <div class="ac-metric-row"><span class="ml">Delta revenue potencial</span><span class="mv g">+€503.051</span></div>
               <div class="ac-metric-row"><span class="ml">Ticket por orden exitosa</span><span class="mv">€76,85</span></div>
-              <div class="ac-metric-row"><span class="ml">Estado</span><span class="mv" style="color:var(--amber)">Diagnóstico pendiente</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCION 2 — W816 -->
+      <div class="ac a1" id="ac2">
+        <div class="ac-header" onclick="toggleAc('ac2')">
+          <div class="ac-num">2</div>
+          <div class="ac-head-text">
+            <div class="ac-title">Migrar W816 de PSP3 a PSP1 en EU</div>
+            <div class="ac-subtitle">Routing subóptimo confirmado · EU · 4.615 órdenes · bajo esfuerzo de implementación</div>
+          </div>
+          <div class="ac-delta">+€89.934</div>
+          <div class="ac-chevron">▼</div>
+        </div>
+        <div class="ac-body">
+          <div class="ac-body-grid">
+            <div>
+              <p class="ac-desc" style="margin-bottom:14px">
+                W816 procesa el 92% de su volumen en EU usando <strong>PSP3, el PSP con peor CR en la región (47%)</strong>. Con el mismo PSP, en APAC llega a 73% — el problema es la combinación PSP3 + EU. Redirigir ese tráfico a PSP1 (74% CR en EU) corrige el gap sin afectar otras regiones.
+              </p>
+              <div class="steps-list">
+                <div class="step-item"><div class="step-n">→</div><div>Redirigir tráfico EU de W816 de PSP3 a PSP1</div></div>
+                <div class="step-item"><div class="step-n">→</div><div>Monitorear CR durante las primeras semanas post-migración</div></div>
+              </div>
+            </div>
+            <div class="ac-metrics">
+              <div class="ac-metric-row"><span class="ml">CR EU actual (PSP3)</span><span class="mv r">47%</span></div>
+              <div class="ac-metric-row"><span class="ml">CR EU proyectado (PSP1)</span><span class="mv g">74%</span></div>
+              <div class="ac-metric-row"><span class="ml">Órdenes EU afectadas</span><span class="mv">4.615</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta órdenes exitosas</span><span class="mv g">+1.248</span></div>
+              <div class="ac-metric-row"><span class="ml">Revenue por orden exitosa</span><span class="mv">€75,83</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta revenue</span><span class="mv g">+€94.599</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta costo (PSP3→PSP1)</span><span class="mv r">+€4.665</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta EBITDA neto</span><span class="mv g">+€89.934</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCION 3 — W199 -->
+      <div class="ac a2" id="ac3">
+        <div class="ac-header" onclick="toggleAc('ac3')">
+          <div class="ac-num">3</div>
+          <div class="ac-head-text">
+            <div class="ac-title">Migrar W199 de PSP2 a PSP1 en EU</div>
+            <div class="ac-subtitle">Misma brecha, mismo fix · EU · 3.764 órdenes · bajo esfuerzo de implementación</div>
+          </div>
+          <div class="ac-delta">+€118.531</div>
+          <div class="ac-chevron">▼</div>
+        </div>
+        <div class="ac-body">
+          <div class="ac-body-grid">
+            <div>
+              <p class="ac-desc" style="margin-bottom:14px">
+                W199 concentra el 90% de su volumen en EU con PSP2, que tiene 43% CR en esa región. El mismo PSP2 en APAC alcanza 87% — <strong>el problema está en PSP2 + EU</strong>, no en el website. PSP1 tiene 74% CR en EU.
+              </p>
+              <div class="steps-list">
+                <div class="step-item"><div class="step-n">→</div><div>Redirigir tráfico EU de W199 de PSP2 a PSP1</div></div>
+                <div class="step-item"><div class="step-n">→</div><div>Monitorear CR durante las primeras semanas post-migración</div></div>
+              </div>
+            </div>
+            <div class="ac-metrics">
+              <div class="ac-metric-row"><span class="ml">CR EU actual (PSP2)</span><span class="mv r">43%</span></div>
+              <div class="ac-metric-row"><span class="ml">CR EU proyectado (PSP1)</span><span class="mv g">74%</span></div>
+              <div class="ac-metric-row"><span class="ml">Órdenes EU afectadas</span><span class="mv">3.764</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta órdenes exitosas</span><span class="mv g">+1.190</span></div>
+              <div class="ac-metric-row"><span class="ml">Revenue por orden exitosa</span><span class="mv">€103</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta revenue</span><span class="mv g">+€122.201</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta costo (PSP2→PSP1)</span><span class="mv r">+€3.670</span></div>
+              <div class="ac-metric-row"><span class="ml">Delta EBITDA neto</span><span class="mv g">+€118.531</span></div>
             </div>
           </div>
         </div>
@@ -850,24 +847,24 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
       Impacto esperado
     </div>
 
-    <h2>Ejecutar bien estas iniciativas<br>mueve el EBITDA un <em>+30%.</em></h2>
-    <p class="lead">El problema es de routing, no de demanda. Hay <strong style="color:rgba(255,255,255,0.85)">€208K disponibles esta semana</strong> con dos cambios técnicos de bajo riesgo. Hay <strong style="color:rgba(255,255,255,0.85)">€503K más en juego</strong> si el diagnóstico de Amex confirma la hipótesis.</p>
+    <h2>El EBITDA potencial total es <em>€3,07M</em>,<br>un incremento del +30% sobre la base actual.</h2>
+    <p class="lead">Dos iniciativas de routing de bajo esfuerzo generan <strong style="color:rgba(255,255,255,0.85)">+€208K cuantificados</strong>. Resolver la anomalía de Amex en EU suma <strong style="color:rgba(255,255,255,0.85)">+€503K adicionales</strong> — con un diagnóstico técnico como punto de partida.</p>
 
     <div class="outcome-grid">
       <div class="outcome-card g">
-        <div class="outcome-label">Confirmado · listo para ejecutar</div>
+        <div class="outcome-label">Routing · bajo esfuerzo · cuantificado</div>
         <div class="outcome-val">+€208K</div>
-        <div class="outcome-desc">Migraciones de W816 y W199 a PSP1 en EU. Sin nuevo tráfico, sin riesgo sobre lo que ya funciona.</div>
+        <div class="outcome-desc">Migración de W816 y W199 a PSP1 en EU.</div>
       </div>
       <div class="outcome-card r">
-        <div class="outcome-label">Potencial · sujeto a diagnóstico</div>
+        <div class="outcome-label">Amex EU · diagnóstico como primer paso</div>
         <div class="outcome-val">+€503K</div>
-        <div class="outcome-desc">Si Amex EU alcanza el CR del resto de tarjetas. Requiere diagnóstico técnico previo.</div>
+        <div class="outcome-desc">Upside estimado si Amex EU alcanza el CR del resto de tarjetas.</div>
       </div>
       <div class="outcome-card y">
-        <div class="outcome-label">Upside total sobre base actual</div>
-        <div class="outcome-val">+€711K</div>
-        <div class="outcome-desc">Sobre EBITDA base de €2,36M — un incremento del +30% sin cambio de precios ni volumen.</div>
+        <div class="outcome-label">EBITDA potencial total</div>
+        <div class="outcome-val">€3,07M</div>
+        <div class="outcome-desc">Sobre base actual de €2,36M — incremento del +30% sin cambio de precios ni volumen de tráfico.</div>
       </div>
     </div>
 
@@ -875,7 +872,7 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
       <div class="seq-item">
         <div class="seq-dot g">1</div>
         <div class="seq-content">
-          <div class="seq-timing">Semana 1–2 · Inmediato</div>
+          <div class="seq-timing">Fase 1 · Baja complejidad</div>
           <div class="seq-title">Migrar W816 y W199 a PSP1 en EU</div>
           <div class="seq-desc">Cambio de routing en EU únicamente. APAC y US permanecen intactos. Monitorear CR durante 2 semanas para confirmar estabilidad.</div>
         </div>
@@ -883,7 +880,7 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
       <div class="seq-item">
         <div class="seq-dot g">2</div>
         <div class="seq-content">
-          <div class="seq-timing">Semana 2–4 · Paralelo</div>
+          <div class="seq-timing">Fase 2 · En paralelo</div>
           <div class="seq-title">Auditar logs de rechazo de Amex en EU</div>
           <div class="seq-desc">Identificar el código de error dominante. Con ese dato, determinar si la solución es técnica, comercial o requiere un nuevo PSP.</div>
         </div>
@@ -891,7 +888,7 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
       <div class="seq-item">
         <div class="seq-dot y">3</div>
         <div class="seq-content">
-          <div class="seq-timing">Mes 2–3</div>
+          <div class="seq-timing">Fase 3 · Post-diagnóstico</div>
           <div class="seq-title">Implementar fix de Amex en EU</div>
           <div class="seq-desc">Según resultado del diagnóstico: reconfiguración con PSPs existentes, nuevo PSP especializado, o restricción parcial de Amex en EU mientras se resuelve.</div>
         </div>
@@ -899,7 +896,7 @@ footer span { font-size: 0.68rem; color: rgba(255,255,255,0.25); }
       <div class="seq-item">
         <div class="seq-dot r">4</div>
         <div class="seq-content">
-          <div class="seq-timing">Mes 3–6 · Estructural</div>
+          <div class="seq-timing">Fase 4 · Revisión estructural</div>
           <div class="seq-title">Auditar exposición a PSP3 en el resto del portfolio</div>
           <div class="seq-desc">Con W816 ya migrado, evaluar qué otros websites operan con PSP3 en EU y si aplica la misma lógica de migración.</div>
         </div>
